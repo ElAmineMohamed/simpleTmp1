@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.btn-primery {
+  cursor: pointer;
+  border: none;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #1da1f2;
+  color: #e1e8ed;
+}
+
+nav {
+  background-color: #e1e8ed;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-between;
+  box-shadow: 0px -1px 5px #657786;
+}
+nav .logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+nav .logo span {
+  color: #1da1f2;
+}
+nav .items {
+  width: 20%;
+  gap: 30%;
+  display: flex;
+}
+nav .sign {
+  gap: 10px;
+  display: flex;
+  padding-right: 10px;
+}
+
+.show {
+  display: flex;
+  position: relative;
+  background: #1da1f2;
+  min-height: 600px;
+}
+.show .about-servece {
+  color: #e1e8ed;
+  font-size: 2rem;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.show .img-wraper {
+  position: relative;
+  min-width: 60%;
+}
+.show .img-wraper .imag-container {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  height: 500px;
+}
+.show .img-wraper .imag-container img {
+  height: 100%;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

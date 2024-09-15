@@ -1,0 +1,85 @@
+// Twitter Colors
+$twitter-blue: #1da1f2;
+$twitter-dark-blue: #1a91da;
+$twitter-light-blue: #a4d9f9;
+$twitter-dark: #14171a;
+$twitter-light: #e1e8ed;
+$twitter-extra-light: #f5f8fa;
+$twitter-gray: #657786;
+$twitter-red: #e0245e;
+$twitter-green: #17bf63;
+$twitter-yellow: #ffad1f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.btn-primery {
+  cursor: pointer;
+  border: none;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: $twitter-blue;
+  color: $twitter-light;
+}
+
+nav {
+  background-color: $twitter-light;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-between;
+  box-shadow: 0px -1px 5px $twitter-gray;
+  .logo {
+    font-size: 2rem;
+    cursor: pointer;
+    span {
+      color: $twitter-blue;
+    }
+  }
+  .items {
+    width: 20%;
+    gap: 30%;
+    display: flex;
+  }
+  .sign {
+    gap: 10px;
+    display: flex;
+    padding-right: 10px;
+  }
+}
+
+.show {
+  display: flex;
+  position: relative;
+  background: $twitter-blue;
+  min-height: 600px;
+  .about-servece {
+    color: $twitter-light;
+    font-size: 2rem;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-wraper {
+    position: relative;
+    min-width: 60%;
+    .imag-container {
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      height: 500px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
