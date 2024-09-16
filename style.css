@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
 .btn-primery {
@@ -15,6 +17,11 @@
   color: #e1e8ed;
 }
 
+.card {
+  border: 2px solid #ccd6dd;
+  border-radius: 8px;
+}
+
 nav {
   background-color: #e1e8ed;
   position: sticky;
@@ -22,7 +29,7 @@ nav {
   z-index: 3;
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
   justify-content: space-between;
   box-shadow: 0px -1px 5px #657786;
 }
@@ -44,13 +51,13 @@ nav .sign {
   padding-right: 10px;
 }
 
-.show {
+.hero {
   display: flex;
   position: relative;
   background: #1da1f2;
-  min-height: 600px;
+  min-height: calc(100vh - 4rem);
 }
-.show .about-servece {
+.hero .about-servece {
   color: #e1e8ed;
   font-size: 2rem;
   padding: 10px;
@@ -58,19 +65,51 @@ nav .sign {
   display: flex;
   flex-direction: column;
 }
-.show .img-wraper {
+.hero .img-wraper {
   position: relative;
   min-width: 60%;
 }
-.show .img-wraper .imag-container {
-  position: absolute;
-  top: 1rem;
-  right: 0;
+.hero .img-wraper .imag-container {
   height: 500px;
 }
-.show .img-wraper .imag-container img {
+.hero .img-wraper .imag-container img {
   height: 100%;
   width: 100%;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 80px 0px;
+}
+.services .service-Wraper {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  flex-direction: column;
+}
+.services .service-Wraper img {
+  height: 6rem;
+}
+.services .service-Wraper .pWraper {
+  width: 150px;
+  background-image: url(./image/N60.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.services .service-Wraper .pWraper p {
+  padding-left: 30px;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

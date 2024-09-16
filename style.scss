@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap);
 // Twitter Colors
 $twitter-blue: #1da1f2;
 $twitter-dark-blue: #1a91da;
@@ -9,13 +10,19 @@ $twitter-gray: #657786;
 $twitter-red: #e0245e;
 $twitter-green: #17bf63;
 $twitter-yellow: #ffad1f;
-
+// mixin
+@mixin borderMix {
+  border: 2px solid #ccd6dd;
+}
+//root
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
+
 .btn-primery {
   cursor: pointer;
   border: none;
@@ -26,6 +33,11 @@ $twitter-yellow: #ffad1f;
   color: $twitter-light;
 }
 
+.card {
+  @include borderMix();
+  border-radius: 8px;
+}
+
 nav {
   background-color: $twitter-light;
   position: sticky;
@@ -33,7 +45,7 @@ nav {
   z-index: 3;
   display: flex;
   align-items: center;
-  height: 3rem;
+  height: 4rem;
   justify-content: space-between;
   box-shadow: 0px -1px 5px $twitter-gray;
   .logo {
@@ -55,11 +67,11 @@ nav {
   }
 }
 
-.show {
+.hero {
   display: flex;
   position: relative;
   background: $twitter-blue;
-  min-height: 600px;
+  min-height: calc(100vh - 4rem);
   .about-servece {
     color: $twitter-light;
     font-size: 2rem;
@@ -72,14 +84,46 @@ nav {
     position: relative;
     min-width: 60%;
     .imag-container {
-      position: absolute;
-      top: 1rem;
-      right: 0;
       height: 500px;
       img {
         height: 100%;
         width: 100%;
       }
     }
+  }
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 80px 0px;
+  .service-Wraper {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    flex-direction: column;
+    img {
+      height: 6rem;
+    }
+    .pWraper {
+      width: 150px;
+      background-image: url(./image/N60.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      p {
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+//-------------media---------------
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column;
   }
 }
