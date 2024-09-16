@@ -78,6 +78,8 @@ nav {
     color: $twitter-light;
     font-size: 2rem;
     padding: 10px;
+    position: relative;
+    bottom: 80px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -130,5 +132,8 @@ nav {
 @media (max-width: 650px) {
   .hero {
     flex-direction: column;
+    .about-servece {
+      position: static;
+    }
   }
 }
