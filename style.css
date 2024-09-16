@@ -34,7 +34,9 @@ nav {
   box-shadow: 0px -1px 5px #657786;
 }
 nav .logo {
-  font-size: 2rem;
+  padding: 6px;
+  font-size: 2.5rem;
+  font-weight: 800;
   cursor: pointer;
 }
 nav .logo span {
@@ -54,7 +56,7 @@ nav .sign {
 .hero {
   display: flex;
   position: relative;
-  background: #1da1f2;
+  background: linear-gradient(180deg, #1da1f2, #1da1f2, #ffffff);
   min-height: calc(100vh - 4rem);
 }
 .hero .about-servece {
@@ -67,7 +69,7 @@ nav .sign {
 }
 .hero .img-wraper {
   position: relative;
-  min-width: 60%;
+  min-width: 50%;
 }
 .hero .img-wraper .imag-container {
   height: 500px;
@@ -84,25 +86,28 @@ nav .sign {
   justify-content: center;
   padding: 10px;
   margin: 80px 0px;
+  gap: 50px;
 }
 .services .service-Wraper {
   display: flex;
   padding: 20px;
   align-items: center;
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 350px;
   flex-direction: column;
 }
 .services .service-Wraper img {
-  height: 6rem;
+  height: 15rem;
 }
 .services .service-Wraper .pWraper {
-  width: 150px;
+  width: 2px;
+  height: 50px;
   background-image: url(./image/N60.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .services .service-Wraper .pWraper p {
+  padding-top: 8px;
   padding-left: 30px;
 }
 
