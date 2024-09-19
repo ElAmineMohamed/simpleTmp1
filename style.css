@@ -23,7 +23,7 @@
 }
 
 nav {
-  background-color: #e1e8ed;
+  background-color: #f5f8fa;
   position: sticky;
   top: 0;
   z-index: 3;
@@ -31,7 +31,7 @@ nav {
   align-items: center;
   height: 4rem;
   justify-content: space-between;
-  box-shadow: 0px -1px 5px #657786;
+  box-shadow: 0px 0px 10px #657786;
 }
 nav .logo {
   padding: 6px;
@@ -56,25 +56,31 @@ nav .sign {
 .hero {
   display: flex;
   position: relative;
-  background: linear-gradient(180deg, #1da1f2, #1da1f2, #ffffff);
   min-height: calc(100vh - 4rem);
 }
 .hero .about-servece {
-  color: #e1e8ed;
+  animation: par 2s ease;
+  margin: 20px;
+  color: #14171a;
   font-size: 2rem;
   padding: 10px;
-  position: relative;
-  bottom: 80px;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 .hero .img-wraper {
+  margin: 10px;
   position: relative;
+  top: 60px;
   min-width: 50%;
+  max-height: 600px;
+  box-shadow: 9px 9px 25px #657786;
+  background: linear-gradient(130deg, #a4d9f9, #a4d9f9, #a4d9f9, #ffffff);
+  animation: gri 2s linear;
+  border-radius: 20px;
 }
 .hero .img-wraper .imag-container {
-  height: 500px;
+  height: 400px;
 }
 .hero .img-wraper .imag-container img {
   height: 100%;
@@ -102,8 +108,9 @@ nav .sign {
   height: 15rem;
 }
 .services .service-Wraper .pWraper {
-  width: 2px;
-  height: 50px;
+  color: #f5f8fa;
+  width: 250px;
+  height: 60px;
   background-image: url(./image/N60.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -119,6 +126,14 @@ nav .sign {
   }
   .hero .about-servece {
     position: static;
+  }
+}
+@keyframes par {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
   }
 }
 
