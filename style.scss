@@ -140,6 +140,22 @@ nav {
     }
   }
 }
+.feedBack {
+  display: flex;
+  width: 100vh;
+  flex-direction: column;
+  padding-left: 40vh;
+  .sladerWraper {
+    cursor: grab;
+    overflow: scroll;
+    width: 90vh;
+    display: flex;
+    gap: 15px;
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+  }
+}
 
 //-------------media---------------
 @media (max-width: 650px) {
@@ -156,5 +172,13 @@ nav {
   }
   to {
     opacity: 1;
+  }
+}
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
