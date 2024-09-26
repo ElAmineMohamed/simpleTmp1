@@ -57,6 +57,7 @@ nav .sign {
   display: flex;
   position: relative;
   min-height: calc(100vh - 4rem);
+  margin: 0 50px;
 }
 .hero .about-servece {
   animation: par 2s ease;
@@ -88,13 +89,23 @@ nav .sign {
 }
 
 .services {
+  font-size: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  margin: 80px 0px;
+  margin: 80px 50px;
   gap: 50px;
+}
+.services .discription {
+  animation: par 2s ease;
+  animation-timeline: view();
+  display: block;
+  width: 100vw;
+}
+.services .discription .con {
+  width: 700px;
 }
 .services .service-Wraper {
   display: flex;
@@ -121,15 +132,17 @@ nav .sign {
 }
 
 .feedBack {
+  overflow: hidden;
   display: flex;
-  width: 100vh;
+  align-items: center;
+  width: 400px;
+  height: 600px;
   flex-direction: column;
-  padding-left: 40vh;
 }
 .feedBack .sladerWraper {
   cursor: grab;
   overflow: scroll;
-  width: 90vh;
+  width: 300px;
   display: flex;
   gap: 15px;
 }
@@ -151,14 +164,6 @@ nav .sign {
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes autoScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
   }
 }
 

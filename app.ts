@@ -1,36 +1,3 @@
-// const slider = document.querySelector('.sladerWraper')!
-// const prev = document.querySelector('.prev')!
-// const next = document.querySelector('.next')!
-
-
-
-// next.addEventListener('click', () => {
-//     console.log('it`s working')
-//     slider.scrollBy({ left: 200, behavior: 'smooth' }) // Scrolls 200px to the right
-// })
-
-// prev.addEventListener('click', () => {
-//     console.log('it`s working')
-//     slider.scrollBy({ left: -200, behavior: 'smooth' }) // Scrolls 200px to the left
-// })
-// let scrollAmount = 0;
-
-// function autoScroll() {
-//     scrollAmount += 1;
-//     slider.scrollLeft = scrollAmount;
-
-//     if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
-//         scrollAmount = 0; // Reset when reaching the end
-//     }
-
-//     requestAnimationFrame(autoScroll); // Continuously call this function
-// }
-
-// autoScroll(); // Start the auto scroll
-
-
-
-
 const slider = document.querySelector('.sladerWraper')!;
 const prev = document.querySelector('.prev')!;
 const next = document.querySelector('.next')!;
@@ -41,7 +8,7 @@ let scrollTimeout: number | undefined;
 // التمرير التلقائي
 function autoScroll() {
     if (isAutoScrolling) {
-        slider.scrollBy({ left: 1, behavior: 'smooth' }); // تمرير بكسل واحد
+        slider.scrollBy({ left: 1, behavior: "smooth" }); // تمرير بكسل واحد
         if (slider.scrollLeft >= slider.scrollWidth - slider.clientWidth) {
             slider.scrollLeft = 0; // إعادة التمرير إلى البداية عند الوصول للنهاية
         }
